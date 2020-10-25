@@ -12,6 +12,8 @@ namespace StacksAndQueues
             stack.Push(56);
             stack.Display();
             Console.WriteLine(" ----");
+            stack.Clear();
+            stack.Display();
             Console.ReadKey();
         }
     }
