@@ -30,6 +30,22 @@ namespace StacksAndQueues
             }
            
         }
+        /// <summary>
+        /// UC 3 : Dequeues from the queue.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            Node temp = this.front;
+            front = front.next;
+            Console.WriteLine("Dequeued value: " + temp.data);
+        }
+
 
         /// <summary>
         /// Displays the queue contents from front to rear.
